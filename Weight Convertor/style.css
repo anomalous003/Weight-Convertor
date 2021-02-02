@@ -34,7 +34,7 @@ header .fas{
 .input{ 
     display:flex;
     flex-direction: column;
-    padding: 0 3.3em 1.5em 3.3em ;
+    padding: 0 3.1em 1.5em 3.1em ;
 }
 
 #input_num, #si_unit{
@@ -49,7 +49,7 @@ header .fas{
 
 /* Styling results section */
 .results{
-    padding: 0 3.3em 1.2em 3.3em ;
+    padding: 0 3.1em 1.2em 3.1em ;
 }
 
 .answer{
