@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Convertor</title>
+    <link rel="shortcut icon" href="weight.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawsome/css/all.css">
+</head>
+
+<body>
+    <header>
+        <h1><i class="fas fa-balance-scale-right"></i> <span>LIVE CONVERTOR</span></h1>
+    </header>
+
+    <div class="measurements_container">
+        <span class="weight measurement">Weight</span>
+        <span class="length measurement">Length</span>
+        <span class="temp measurement">Temperature</span>
+    </div>        
+    
+    <main>
+        <div class="wrapper">
+            <div class="weight_container">
+                <div class="value input">
+                    <label for="weight_num">Value</label>
+                    <input type="number" id="weight_num" placeholder="Enter the number">
+                </div>
+                    
+                <div class="units input">
+                    <label for="weight_unit">SI Unit</label>
+                    <select id="weight_unit">
+                        <option value="kg" selected>kg</option>
+                        <option value="grams">grams</option>
+                        <option value="pounds">lb(pounds)</option>
+                    </select>
+                </div>
+        
+                <div class="results">
+                    <div class="grams answer">
+                        <h3>Grams</h3>
+                        <span class="grams_value"></span>
+                    </div>
+            
+                    <div class="kilograms answer">
+                        <h3>Kilograms</h3>
+                        <span class="kilograms_value"></span>
+                    </div>
+            
+                    <div class="pound answer">
+                        <h3>Pounds</h3>
+                        <span class="pounds_value"></span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="length_container">
+                <div class="value input">
+                    <label for="length_num">Value</label>
+                    <input type="number" id="length_num" placeholder="Enter the number">
+                </div>
+        
+                <div class="units input">
+                    <label for="length_unit">SI Unit</label>
+                    <select id="length_unit">
+                        <option value="km" selected>Kilometer</option>
+                        <option value="meter">Meter</option>
+                        <option value="miles">Miles</option>
+                    </select>
+                </div>
+        
+                <div class="results">
+                    <div class="km answer">
+                        <h3>Kilometer</h3>
+                        <span class="km_value"></span>
+                    </div>
+            
+                    <div class="meter answer">
+                        <h3>Meter</h3>
+                        <span class="meter_value"></span>
+                    </div>
+            
+                    <div class="miles answer">
+                        <h3>Miles</h3>
+                        <span class="miles_value"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="temp_container">
+                <div class="value input">
+                    <label for="temp_num">Value</label>
+                    <input type="number" id="temp_num" placeholder="Enter the number">
+                </div>
+        
+                <div class="units input">
+                    <label for="temp_unit">SI Unit</label>
+                    <select id="temp_unit">
+                        <option value="celsius" selected>Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+        
+                <div class="results">
+                    <div class="celsius answer">
+                        <h3>Celsius</h3>
+                        <span class="celsius_value"></span>
+                    </div>
+            
+                    <div class="fahrenheit answer">
+                        <h3>Fahrenheit</h3>
+                        <span class="fahrenheit_value"></span>
+                    </div>
+            
+                    <div class="kelvin answer">
+                        <h3>Kelvin</h3>
+                        <span class="kelvin_value"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
